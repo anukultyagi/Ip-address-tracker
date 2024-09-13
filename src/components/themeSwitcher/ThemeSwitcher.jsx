@@ -21,8 +21,7 @@ const ThemeSwitcher = () => {
             style={{}}
             checked={isDarkMode}
             onChange={toggleDarkMode}
-            size={40}
-            className='absolute top-4 right-4'
+            className='absolute top-4 right-4 h-8 w-8 sm:h-10 sm:w-10'
         />
     )
 }
