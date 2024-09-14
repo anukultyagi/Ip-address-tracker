@@ -89,7 +89,7 @@ const App = () => {
           )
         )}
       </header>
-      <div className="w-full h-96 dark:invert">
+      <div className="w-full h-96 dark:invert transition-all duration-500">
         {apiData && apiData.location && apiData.location.lat && apiData.location.lng ? (
           <HomeMapContainer lat={apiData.location.lat} lng={apiData.location.lng} />
         ) : (
