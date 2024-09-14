@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, Icon } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import { useEffect } from 'react';
 
@@ -14,6 +14,8 @@ const ChangeMapView = ({ lat, lng }) => {
 };
 
 const HomeMapContainer = ({ lat, lng }) => {
+
+
     const position = [lat, lng];
 
     return (
@@ -22,7 +24,7 @@ const HomeMapContainer = ({ lat, lng }) => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}>
+            <Marker position={position} icon={Icon}>
                 <Popup>
                     Location: {lat}, {lng}
                 </Popup>
