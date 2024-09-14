@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-stone-200 dark:bg-stone-800 transition-all duration-500">
       <ThemeSwitcher />
-      <header className="min-h-60 bg-hero-pattern text-center py-7">
+      <header className="min-h-60 hero-pattern text-center py-7">
         <h1 className="text-2xl sm:text-3xl font-bold text-white capitalize mb-6">IP Address Tracker</h1>
         <div className="max-w-96 mx-3 sm:mx-auto mb-10 rounded-xl overflow-hidden flex">
           <input

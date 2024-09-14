@@ -1,3 +1,7 @@
 .leaflet-container {
   height: inherit;
 }
+
+.hero-pattern {
+  background-image: url("/src/images/pattern-bg-desktop.png");
+}
